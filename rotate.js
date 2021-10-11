@@ -1,5 +1,5 @@
 var rotate = function(nums, k) {
-    let index = nums.length - k
+    let index = nums.length - (k % nums.length)
     let back = nums.slice(0, index)
     let front = nums.slice(index)
     
